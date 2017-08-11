@@ -1,8 +1,8 @@
 {
-    "name": "phpoffice/phppowerpoint",
+    "name": "adstruc/phppowerpoint",
     "description": "PHPPowerPoint - Read, Create and Write Presentations documents in PHP",
     "keywords": ["PHP","PowerPoint","LibreOffice","pptx","ppt","odp","presentations"],
-    "homepage": "http://phpoffice.github.io",
+    "homepage": "https://github.com/adstruc/php-webdriver",
     "type": "library",
     "license": "LGPL",
     "version": "0.1.0",
