@@ -201,9 +201,14 @@ abstract class PHPPowerPoint_Shape_BaseDrawing extends PHPPowerPoint_Shape imple
      */
     public function setWidthAndHeight($width = 0, $height = 0)
     {
-        $xratio = $width / $this->_width;
-        $yratio = $height / $this->_height;
-        if ($this->_resizeProportional && !($width == 0 || $height == 0)) {
+        if (!$this->_resizeProportional || $this->_width == 0 || $this->_height == 0) {
+            $this->_width  = $width;
+            $this->_height = $height;
+
+        } elseif ($this->_resizeProportional && !($width == 0 || $height == 0)) {
+            $xratio = $width / $this->_width;
+            $yratio = $height / $this->_height;
+
             if (($xratio * $this->_height) < $height) {
                 $this->_height = ceil($xratio * $this->_height);
                 $this->_width  = $width;
