@@ -54,6 +54,9 @@ class PHPPowerPoint_Writer_PowerPoint2007_LayoutPack_TemplateBased extends PHPPo
 
         // Layout relations
         $this->_layoutRelations = array();
+        
+        // DBG 2018-04-04: initializing $this->_themes to empty array to prevent absurd type casting to string if uninitialized  
+        $this->_themes = array();
 
         // Open package
         $package = new ZipArchive;
