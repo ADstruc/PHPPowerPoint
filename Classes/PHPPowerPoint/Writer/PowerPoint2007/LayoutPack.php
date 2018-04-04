@@ -69,7 +69,7 @@ abstract class PHPPowerPoint_Writer_PowerPoint2007_LayoutPack
      *
      * @var array
      */
-    protected $_themes = '';
+    protected $_themes = array();
 
     /**
      * Theme relations
