@@ -82,7 +82,7 @@ class PHPPowerPoint_Shared_ZipStreamWrapper
     public function stream_open($path, $mode)
     {
         // Check for mode
-        if ($mode{0} != 'r') {
+        if ($mode[0] != 'r') {
             throw new Exception('Mode ' . $mode . ' is not supported. Only read mode is supported.');
         }
 
